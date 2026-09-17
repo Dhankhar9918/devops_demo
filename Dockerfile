@@ -5,5 +5,4 @@ WORKDIR /app
 COPY app.py .
 COPY config.txt .
 
-CMD ["tail", "-f", "/dev/null"]
-EXPOSE 80
+CMD ["python", "app.py"]
